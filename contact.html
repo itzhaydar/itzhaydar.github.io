@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haysoft Contact Page</title>
+    <style>
+        *{
+        box-sizing:border-box;
+        margin:0;
+        font-family: "Lato",sans-serif;
+        text-decoration:none;
+        }
+   div.header{
+            text-align:center ;
+            box-shadow: 0px 4px 13px -7px #7373fdf5;
+            padding: 5px;
+            width:100%;
+            position:fixed;
+            top:0;
+            border-radius:15px;{}
+        }
+        
+        .menui{
+        font-size: 30px;
+        font-weight: bold;
+        cursor: pointer;
+        float:left;
+        color:#0000ff;
+        }
+        .header .title a{
+        text-align: center;
+        font-size:30px ;
+        cursor:pointer;
+        color:#0000ff;
+        font-weight: bold;
+        }
+        #nav {
+            position:fixed;
+            top:0;
+            left:0;
+            background-color: rgb(10, 55, 200);
+            width:100%;
+            height:0%;
+            z-index: 1;
+            transition: 0.8s;
+            overflow-x: hidden;
+        }
+        #nav .closer{
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 35px;
+        float: right;
+        margin: 20px 20px 0px 0px;
+        color:#fff;
+        }
+        .nav-content{
+            position: relative;
+           text-align: center;   
+           width: 100%;
+           margin-top: 65px;
+
+        }
+        .nav-content a {
+        font-size: 30px;
+        text-decoration: none;
+        color:#fff;
+        display: block;
+        margin-top: 40px;
+        padding:2px;
+        }
+        .welcome {
+        margin:60px 5px 15px 5px;
+        line-height:1.5em;
+        font-size:17px;
+        }
+        footer{
+        margin-top:100px;
+        padding:5px;
+        font-size:18px;
+        text-align:center;
+        color:#fff;
+        background:#0000ff;
+        font-weight:bold;
+        }
+        
+        .contacts{
+        background:#0000ff;
+        padding:5px;
+        border-radius:25px;
+        
+        }
+        .contacts a{
+        display:block;
+        color:blue;
+        padding:5px;
+        background:#fff;
+        border-radius:25px;
+        margin:10px 2px 2px 2px;
+        font-weight:bold;
+        }
+        </style>
+    <script src="https://kit.fontawesome.com/d69c6c6e5f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+        <span class="menui" onclick="Open()">
+            &#9776;
+        </span>
+        
+<span class="title"><a href="portfolio.html" >
+Haysoft</a>
+</span>
+    </div>
+    <div id="nav">
+        <span class="closer" onclick="Close()">
+            &times;
+        </span>
+        <div class="nav-content">
+        <a href="contact.html">Contact Me</a>
+        <a href="about.html">About Me</a>
+        <a href="projects.html">My Projects</a>
+        <a href="chatbot.html">Chatbot</a>
+        </div>
+    </div>
+    <div class="welcome">
+   &nbsp;Welcome to Haysoft contact page, kindly use any of the links below to contact me.</div>
+   <div class="contacts">
+   
+<a href="facebook.com/aliyuusmanabdullahi5" >Aliyu on Facebook</a> 
+<a href="wa.me/+2349061677114" >Aliyu on WhatsApp</a>
+<a href="twitter.com/itzhaydar" >Aliyu on Twitter</a>
+<a href="github.com/itzhaydar" >Aliyu on Github</a>
+    </div>
+    
+
+    <script>
+        function Open() {
+            document.getElementById("nav").style.height = "100%";
+        }
+        function Close() {
+            document.getElementById("nav").style.height = "0%";
+        }
+    </script>
+    <footer>
+    Haysoft &copy; <script type="text/javascript">
+    var nyear = new Date();
+    document.write(nyear.getFullYear());
+    </script>
+    </footer>
+</body>
+</html>
